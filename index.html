@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="heading">
+            <div class="logo">+</div>
+            <h1>Doctor Appointment Booking</h1>
+            <p>Book your visit with our doctors</p>
+        </header>
+
+        <main class="form-card">
+            <h2>Patient Details</h2>
+            <p class="intro">Please fill in the details below to request an appointment.</p>
+
+            <form action="#" method="get">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" value="Bharath Kumar Reddy"
+                               placeholder="Enter your full name" required minlength="3">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" value="bandibharathkumarreddy46@gmail.com"
+                               placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" value="9876543210"
+                               placeholder="10-digit phone number"
+                               pattern="[0-9]{10}" title="Enter a 10-digit phone number" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" value="21"
+                               placeholder="Enter your age" min="1" max="120" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select gender</option>
+                            <option selected>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                            <option>Prefer not to say</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="department">Department</label>
+                        <select id="department" name="department" required>
+                            <option value="">Choose department</option>
+                            <option>General Medicine</option>
+                            <option selected>Cardiology</option>
+                            <option>Dermatology</option>
+                            <option>Orthopedics</option>
+                            <option>Pediatrics</option>
+                            <option>ENT</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="doctor">Select Doctor</label>
+                        <select id="doctor" name="doctor" required>
+                            <option value="">Choose a doctor</option>
+                            <option selected>Dr. Arun Kumar</option>
+                            <option>Dr. Priya Sharma</option>
+                            <option>Dr. Karthik Rao</option>
+                            <option>Dr. Sneha Reddy</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="date">Appointment Date</label>
+                        <input type="date" id="date" name="date" value="2026-11-25" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="time">Appointment Time</label>
+                        <input type="time" id="time" name="time" value="10:30" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="visit">Appointment Type</label>
+                        <select id="visit" name="visit" required>
+                            <option value="">Select appointment type</option>
+                            <option selected>New Visit</option>
+                            <option>Follow-up Visit</option>
+                        </select>
+                    </div>
+
+                    <div class="field full-width">
+                        <label for="symptoms">Symptoms / Reason for Visit</label>
+                        <textarea id="symptoms" name="symptoms" rows="4"
+                                  placeholder="Briefly describe your reason for visiting" required>Routine check-up and mild seasonal cough. This is sample test data.</textarea>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="submit-btn">Book Appointment</button>
+                    <button type="reset" class="reset-btn">Reset Form</button>
+                </div>
+                <p class="note">Note: This is a front-end assignment demo. It does not send or store appointments.</p>
+            </form>
+        </main>
+
+        <footer>© 2026 CarePoint Clinic | Doctor Appointment Form</footer>
+    </div>
+</body>
+</html>
